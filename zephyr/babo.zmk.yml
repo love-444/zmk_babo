@@ -1,0 +1,13 @@
+file_format: "1"
+id: babo
+name: Babo UP
+type: shield
+url: https://github.com/foostan/crkbd/
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - babo_left
+  - babo_right
