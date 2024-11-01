@@ -25,3 +25,7 @@
         , <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 };
+
+pro_micro_i2c {
+    com-invdir
+};
