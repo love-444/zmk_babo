@@ -23,6 +23,6 @@ include:
     snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: babo_right
-  - board: nice_nano_v2
     snippet: zmk-usb-logging
+  - board: nice_nano_v2
     shield: settings_reset
