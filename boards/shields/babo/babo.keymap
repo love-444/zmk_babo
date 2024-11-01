@@ -23,10 +23,6 @@
 #define INPUT_REL_X 0x00
 #define INPUT_REL_Y 0x01
 
-&encoder {
-	status = "okay";
-};
-
 &mt {
         tapping-term-ms = <200>;
 };
