@@ -27,5 +27,5 @@
 };
 
 pro_micro_i2c {
-    com-invdir
+    com-invdir;
 };
