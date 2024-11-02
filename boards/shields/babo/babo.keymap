@@ -14,14 +14,9 @@
 
 #define BAS 0 // mouse key layer
 #define NUM 1 // mouse key layer
-#define SYM 2 // mouse key layer
-#define FUN 3 // mouse key layer
-#define GAM 4 // mouse key layer
-#define GAM_F 5
-
-#define INPUT_EV_REL 0x02
-#define INPUT_REL_X 0x00
-#define INPUT_REL_Y 0x01
+#define FUN 2 // mouse key layer
+#define GAM 3 // mouse key layer
+#define GAM_F 4
 
 &mt {
         tapping-term-ms = <200>;
