@@ -1,5 +1,3 @@
-#include "babo.dtsi"
-
 &i2c0 {
 	status = "okay";
 	glidepoint0 = glidepoint@2a {
