@@ -22,5 +22,7 @@ include:
     shield: babo_left
   - board: nice_nano_v2
     shield: babo_right
+  - board: seeeduino_xiao_ble
+    shield: babo_trackpad
   - board: nice_nano_v2
     shield: settings_reset

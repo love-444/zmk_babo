@@ -1,0 +1,25 @@
+#include "babo.dtsi"
+
+&i2c0 {
+	status = "okay";
+	glidepoint0 = glidepoint@2a {
+		compatible = "cirque,pinnacle";
+		reg = <0x2a>;
+		status = "okay";
+		dr-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH)>;
+		sensitivity = "2x";
+	};
+};
+
+/ {
+	/* assign `input-listener` to all pointing devices */
+	/* &glidepoint0 on central, &glidepoint1 on peripheral */
+    tpad_central_listener {
+        compatible = "zmk,input-listener";
+        device = <&glidepoint0>;
+        // xy-swap;
+        y-invert;
+        // x-invert;
+        scale-multiplier = <2>;
+	};
+};

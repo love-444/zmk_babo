@@ -1,4 +1,4 @@
-if SHIELD_BABO_LEFT
+if SHIELD_BABO_TRACKPAD
 
 config ZMK_KEYBOARD_NAME
     default "Babo ULP"
@@ -39,5 +39,12 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
+endif
+
+if SHIELD_BABO_TRACKPAD || SHIELD_BABO_LEFT || SHIELD_BABO_RIGHT
+
+config ZMK_SPLIT
+    default y
 
 endif
