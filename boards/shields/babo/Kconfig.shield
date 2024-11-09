@@ -7,5 +7,3 @@ config SHIELD_BABO_LEFT
 config SHIELD_BABO_RIGHT
     def_bool $(shields_list_contains,babo_right)
 
-config SHIELD_BABO_TRACKPAD
-    def_bool $(shields_list_contains,babo_trackpad)

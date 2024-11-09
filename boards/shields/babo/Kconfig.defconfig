@@ -1,4 +1,4 @@
-if SHIELD_BABO_TRACKPAD
+if SHIELD_BABO_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Babo ULP"
@@ -42,7 +42,7 @@ endif # LVGL
 
 endif
 
-if SHIELD_BABO_TRACKPAD || SHIELD_BABO_LEFT || SHIELD_BABO_RIGHT
+if SHIELD_BABO_LEFT || SHIELD_BABO_RIGHT
 
 config ZMK_SPLIT
     default y
