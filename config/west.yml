@@ -11,8 +11,5 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk
-      remote: ReFil
-      revision: ptpp
   self:
     path: config
