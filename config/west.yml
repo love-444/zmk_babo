@@ -8,7 +8,7 @@ manifest:
       url-base: https://github.com/ReFil
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: ReFil
       revision: main
       import: app/west.yml
   self:
