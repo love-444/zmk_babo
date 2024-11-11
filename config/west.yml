@@ -10,6 +10,5 @@ manifest:
     - name: zmk
       remote: ReFil
       revision: ptpp
-      import: app/west.yml
   self:
     path: config
