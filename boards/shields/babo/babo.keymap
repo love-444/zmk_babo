@@ -22,6 +22,22 @@
         tapping-term-ms = <200>;
 };
 
+    glidepoint_input_listener {
+        compatible = "zmk,input-listener";
+        device = <&glidepoint_split>;
+        input-processors = <&zip_xy_scaler 3 2>;
+        precise {
+            layers = <LOWER>;
+            //inherit;
+            input-processors = <&zip_xy_scaler 1 4>;
+        };
+        scroll {
+            layers = <RAISE>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_x_scaler 0 1>, 
+                               <&zip_xy_to_scroll_mapper>;
+        };
+    };
+
 / {
     behaviors {
         hm: homerow_mods {
