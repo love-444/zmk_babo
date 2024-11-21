@@ -59,20 +59,6 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 	};
 };
 
-
-/ {
-	/* assign `input-listener` to all pointing devices */
-	/* &glidepoint0 on central, &glidepoint1 on peripheral */
-    tpad_central_listener {
-        compatible = "zmk,input-listener";
-        device = <&glidepoint0>;
-        // xy-swap;
-        y-invert;
-        // x-invert;
-        scale-multiplier = <2>;
-	};
-};
-
 zephyr_udc0: &usbd {
     status = "okay";
 };
