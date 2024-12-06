@@ -18,8 +18,21 @@
     };
 };
 
+&kscan0 {
+    col-gpios
+        = <&pro_micro 8 GPIO_ACTIVE_HIGH>
+        ;
+    row-gpios
+        = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
+};
+
 / {
-  tpad0: tpad0 {
+    chosen {
+        zmk,kscan = &kscan0;
+    }
+
+    tpad0: tpad0 {
         compatible = "zmk,input-listener";
 
         device = <&glidepoint>;
