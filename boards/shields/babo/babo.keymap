@@ -30,7 +30,6 @@
         compatible = "zmk,input-listener";
         device = <&tpad0>;
         input-processors = <&zip_temp_layer MOU 1000>;
-        };
     };
 
     /* input config for mouse scroll mode on momentary mouse scoll layer (MSC) */
