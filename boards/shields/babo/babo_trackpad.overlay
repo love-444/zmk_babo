@@ -49,9 +49,19 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 };
 
 &i2c0 {
-    status = "okay";
+	status = "disabled";
     glidepoint0: glidepoint@2a {
-        dr-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH)>;
+		compatible = "cirque,pinnacle";
+		reg = <0x2a>;
+		status = "disabled";
+		dr-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH)>;
+		sensitivity = "2x";
+	};
+};
+
+&i2c0 {
+    status = "okay";
+    glidepoint: glidepoint@2a {
         status = "okay";
     };
 };
@@ -59,9 +69,8 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 / {
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
-        device = <&glidepoint0>;
-        // y-invert;
-        // x-invert;
+
+        device = <&glidepoint>;
     };
 };
 
