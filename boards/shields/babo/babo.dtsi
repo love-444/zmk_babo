@@ -68,7 +68,6 @@ zephyr_udc0: &usbd {
 		compatible = "cirque,pinnacle";
 		reg = <0x2a>;
 		status = "disabled";
-		dr-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH)>;
 		sensitivity = "2x";
 	};
 };

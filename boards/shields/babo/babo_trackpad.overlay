@@ -51,6 +51,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 &i2c0 {
     status = "okay";
     glidepoint: glidepoint@2a {
+        dr-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH)>;
         status = "okay";
     };
 };
@@ -59,8 +60,6 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
-        scale-multiplier = <7>;
-        scale-divisor = <3>;
         // y-invert;
         // x-invert;
     };
