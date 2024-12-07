@@ -64,10 +64,11 @@ zephyr_udc0: &usbd {
 
 &i2c0 {
 	status = "disabled";
-    glidepoint0: glidepoint@2a {
+    glidepoint: glidepoint@2a {
 		compatible = "cirque,pinnacle";
 		reg = <0x2a>;
 		status = "disabled";
+		dr-gpios = <&gpio1 4 (GPIO_ACTIVE_HIGH)>;
 		sensitivity = "2x";
 	};
 };
