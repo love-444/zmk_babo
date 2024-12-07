@@ -25,11 +25,11 @@
     tapping-term-ms = <200>;
 };
 
-&tpad0 {
-        input-processors = <&zip_temp_layer MOU 1000>;
-};
-
 / {
+    tpad0 {
+        input-processors = <&zip_temp_layer MOU 1000>;
+    };
+
     /* input config for mouse scroll mode on momentary mouse scoll layer (MSC) */
     tb0_msl_ibl {
         compatible = "zmk,input-behavior-listener";
