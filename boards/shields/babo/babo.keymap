@@ -20,7 +20,7 @@
 #define FUN 2 // mouse key layer
 #define GAM 3 // mouse key layer
 #define GAM_F 4
-#define MOU 4
+#define MOU 5
 
 &mt {
         tapping-term-ms = <200>;
