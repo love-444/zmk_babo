@@ -27,5 +27,6 @@ include:
     shield: babo_trackpad
   - board: nice_nano_v2
     shield: settings_reset
+    snippet: zmk-usb-logging
   - board: seeeduino_xiao_ble
     shield: settings_reset
